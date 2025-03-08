@@ -1,22 +1,34 @@
-import logo from './logo.svg';
+
+import React, {useState} from 'react';
+import axios from 'axios';
 import './App.css';
 
 function App() {
+  const [content, setContent] = useState('');
+  const [response, setResponse] = useState('');
+
+  const handleGenerate = () => {
+    axios.post('http://localhost:5001/api/generate_content', {contents : content})
+      .then(response => {
+        setResponse(response.data.response);
+      })
+      .catch(err => {
+        console.error('Error generating content:' , err);
+      });
+  };
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Gemini AI generate Content</h1>
+        <textarea
+          value={content}
+          onChange={(e) => setContent(e.target.value)}
+          placeholder="Enter content to generate"
+        />
+        <button onClick={handleGenerate}>Generate</button>
+        <h2>Response</h2>
+        <pre>{response}</pre>
       </header>
     </div>
   );
