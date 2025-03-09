@@ -37,4 +37,4 @@ __pycache__/
 # Ignore other common files
 *.log
 *.sqlite3
-.DS_Store
+.DS_Storevenv/
