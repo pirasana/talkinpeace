@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-
+import './App.css';
 function MoodSelection({ setMood }) {
   const navigate = useNavigate();
 
@@ -12,13 +12,13 @@ function MoodSelection({ setMood }) {
   return (
     <div>
       <h2>Select your current mood</h2>
-      <div>
-        <button onClick={() => handleMoodSelection('happy')}>Happy</button>
-        <button onClick={() => handleMoodSelection('sad')}>Sad</button>
-        <button onClick={() => handleMoodSelection('angry')}>Angry</button>
-        <button onClick={() => handleMoodSelection('stressed')}>Stressed</button>
-        <button onClick={() => handleMoodSelection('bored')}>Bored</button>
-        <button onClick={() => handleMoodSelection('lazy')}>Lazy</button>
+      <div className='button-container'>
+        <button className='button buttonhappy' onClick={() => handleMoodSelection('happy')}>Happy</button>
+        <button className='button buttonsad' onClick={() => handleMoodSelection('sad')}>Sad</button>
+        <button className= 'button buttonangry' onClick={() => handleMoodSelection('angry')}>Angry</button>
+        <button className= 'button buttonstressed' onClick={() => handleMoodSelection('stressed')}>Stressed</button>
+        <button className= 'button buttonbored' onClick={() => handleMoodSelection('bored')}>Bored</button>
+        <button className= 'button buttonlazy'  onClick={() => handleMoodSelection('lazy')}>Lazy</button>
       </div>
     </div>
   );

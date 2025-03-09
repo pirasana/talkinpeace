@@ -7,6 +7,94 @@
   pointer-events: none;
 }
 
+.button {
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  width: 150px;
+}
+
+.buttonhappy {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #04AA6D;
+}
+
+.buttonhappy:hover {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.buttonsad {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+
+.buttonsad:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+.buttonangry {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #f44336;
+}
+
+.buttonangry:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+.buttonstressed {
+  background-color: white;
+  color: black;
+  border: 2px solid #673AB7; 
+}
+
+.buttonstressed:hover {
+  background-color: #673AB7;
+  color: white;
+}
+
+.buttonbored {
+  background-color: white;
+  color: black;
+  border: 2px solid #FFC0CB; 
+}
+
+.buttonbored:hover {
+  background-color: #FFC0CB;
+  color: white;
+}
+
+.buttonlazy {
+  background-color: white;
+  color: black;
+  border: 2px solid #ff9800;
+}
+
+.buttonlazy:hover {
+  background-color: #ff9800;
+  color: white;
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px; /* Space between buttons */
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
