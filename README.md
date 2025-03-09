@@ -16,7 +16,7 @@ Make sure you have the following installed on your computer:
 
 
 
-2. **Navigate to the `your-repo0namecd /Users/pirasanaariyam/talkinpeace` folder and set up the Python virtual environment**:
+2. **Navigate to the `your-repo-name folder and set up the Python virtual environment**:
 
     ```sh
     cd your-repo-name
