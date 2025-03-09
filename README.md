@@ -14,7 +14,9 @@ Make sure you have the following installed on your computer:
 
 ### Installation
 
-2. **Set up the Python virtual environment**:
+
+
+2. **Navigate to the `your-repo0name` folder and set up the Python virtual environment**:
 
     ```sh
     cd your-repo-name
