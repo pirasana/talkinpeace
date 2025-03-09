@@ -16,12 +16,17 @@ Make sure you have the following installed on your computer:
 
 
 
-2. **Navigate to the `your-repo-name folder and set up the Python virtual environment**:
+1. **Navigate to the `your-repo-name folder and set up the Python virtual environment**:
 
     ```sh
     cd your-repo-name
     python3 -m venv venv
     source venv/bin/activate  # On Windows: .\venv\Scripts\activate
+    ```
+2. **Install flask thing**:
+
+    ```sh
+    pip install flask flask-cors google-genai
     ```
 
 3. **Install Python dependencies**:
