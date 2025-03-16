@@ -8,7 +8,7 @@ import os
 app = Flask(__name__, static_folder='build')
 CORS(app)
 
-client = genai.Client(api_key="AIzaSyAp8dM7np9uOs1r1Sxi1qgi7HPAsWTgKLc")
+client = genai.Client(api_key="")
 
 @app.route('/')
 def home():
