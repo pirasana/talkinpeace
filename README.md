@@ -1,6 +1,18 @@
-# Gemini AI Content Generator
+# TalkInPeace
 
-This project is a full-stack application that uses a React frontend and a Flask backend to generate content using the Gemini AI model.
+TalkInPeace is a project developed for a hackathon. The goal of this project was to create an innovative solution that allows users to talk to an AI based on their mood, providing a comforting and friendly interaction, almost like having a friend to talk to.
+
+## Features
+- Mood-based conversation with AI
+- Integration with Gemini GPT
+- JSON-based frontend connected through Flask
+
+## Technologies Used
+- JavaScript
+- Python
+- CSS
+- HTML
+
 
 ## Getting Started
 
